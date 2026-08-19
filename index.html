@@ -685,6 +685,8 @@ $("#projectsGrid").innerHTML = projects.map((p,i) => `
   </div>
 </article>`).join("");
 
+  $$("#projectsGrid .reveal").forEach(el => observer.observe(el));
+
 /* ============================================================
    GALLERY + LIGHTBOX
    ============================================================ */
